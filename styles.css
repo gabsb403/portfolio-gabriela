@@ -52,6 +52,12 @@
     margin-bottom: 30px;
 }
 
+.conexoes {
+  margin: 25px 0;
+  font-weight: 600;
+  color: var(--purple-secundary);
+}
+
 hero-bottons {
     display: flex;
     flex-wrap: wrap;
