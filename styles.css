@@ -1,0 +1,91 @@
+:root{
+    --bg-primary: #0d0627;
+    --bg-secondary: #623fb3;
+    --purple-secundary: #8b5cf6;
+    --purple-light: #a78bfa;
+    --text-primary: #f1f1f1;
+    --text-secondary: #cbd5e1;
+}
+
+.foto-perfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 5px;
+  background: linear-gradient(45deg, #8b5cf6, #a78bfa);
+  box-shadow: 0 0 25px #8b5cf6;
+}
+
+.foto-perfil:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px var(--purple-secundary);
+}
+
+.section-hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    padding: 0 20px;
+}
+
+.section-hero h1{
+    font-size: 3rem;
+    color: var(--purple-primary);
+    padding: 5px;
+
+
+}
+
+.section-hero h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--text-secondary);
+}
+
+.section-hero p{
+    max-width: 600px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+hero-bottons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero-buttons a{
+    background-color: var(--bg-secondary);
+   padding: 10px 20px;
+   border-radius: 8px;
+   border: 1px solid var(--purple-primary);
+}
+
+.hero-buttons a:hover{
+    background-color: var(--purple-primary);
+    color: white;
+    box-shadow: 0 0 15px var(--purple-primary);
+}
+
+.section-tecnologias{
+    padding: 80px 10%;
+}
+.section-tecnologias ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.section-tecnologias li{
+    background-color: var(--bg-secondary);
+    padding: 15px 25px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+    border: 1px solid var(--purple-primary);
+}   

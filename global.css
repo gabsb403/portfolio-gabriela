@@ -1,0 +1,15 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+a{
+    tect-decoration: none;
+    color: var(--purple-primary);
+    transition: 0.3s ease;
+}
+
+a:hover{
+    color: var(--purple-light);
+}
