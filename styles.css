@@ -1,6 +1,6 @@
-.section-hero{
+.section-hero{      
     min-height: 80vh;
-    display: flex;
+    display: flex;              /*HERO*/
     align-items: center;
     justify-content: space-between;
     padding: 0 10%;
@@ -50,7 +50,7 @@
     box-shadow: 0 0 25px var(--purple-secondary);
 }
 
-.section-contato{
+.section-contato{                               /*CONTATO*/
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
@@ -58,7 +58,7 @@
 }
 
 .section-contato a{
-    background-color: var(--purple-primary);
+    background-color: var(--purple-primary);             
     color: var(--text-primary);
     padding: 10px 20px;
     border-radius: 8px;
@@ -72,8 +72,16 @@
 }
 
 .section-projetos{
-   padding: 80px 10%;
+   padding: 80px 10%;                             /*PROJETOS*/
 }
+
+.section-projetos h2{
+    font-size: 2.5rem;
+    color: var(--purple-light);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 
 .projetos-container{
     display: grid;
@@ -81,23 +89,23 @@
     gap: 24px;
 }
 
-.projetos{
-    background-color: linear-gradient(145deg, var(--purple-primary), var(--purple-secondary));
-    padding: 20px;
-    border-radius: 12px;
-    border: 2px solid var(--purple-secondary);
-    transition: all 0.3s ease;
-    cursor: pointer;
+.projetos p:last-of-type {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    opacity: 0.8;
 }
 
 
+.projetos-container {
+    margin-top: 40px;
+}
 
-.section-projetos h2{
-    font-size: 2.5rem;
-    color: var(--purple-light);
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 2rem;
+.projetos {
+    background: linear-gradient(145deg, #1a0f3d, #5b3dbd);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
 }
 
 .projetos h3 {
@@ -122,7 +130,283 @@
     transition: all 0.3s ease;
 }
 
+.projetos:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
 .projetos a:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+    background-color: var(--purple-light);
+    color: var(--bg-primary);
+}
+
+.section-hero{      
+    min-height: 80vh;
+    display: flex;              /*HERO*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin-bottom: 40px;
+}
+
+.hero-texto{
+    max-width: 550px;
+}
+
+.hero-imagem img{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: box-shadow 0.3s ease;
+}
+
+.hero-texto h1{
+    font-size: 3rem;
+    color: var(--purple-light);
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.hero-texto h2 {
+    font-size: 1.3rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.hero-texto p {
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.hero-texto h1:hover{
+    color: var(--purple-primary);
+}
+
+.hero-texto h2:hover{
+    color: var(--purple-secondary);
+}
+
+.hero-imagem img:hover{
+    box-shadow: 0 0 25px var(--purple-secondary);
+}
+
+.section-skills{                                    /*SEÇÃO HABILIDADES*/
+    padding: 60px 10%;
+}
+
+.section-skills h2{
+    color: var(--purple-light);
+    margin-bottom: 20px;
+}
+
+
+.skills{                             
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skills span{
+    background-color: var(--purple-secondary);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.section-projetos{
+   padding: 80px 10%;                             /*PROJETOS*/
+}
+
+.section-projetos h2{
+    font-size: 2.5rem;
+    color: var(--purple-light);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.projetos-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.projetos p:last-of-type {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.projetos{
+    background: linear-gradient(145deg, var(--bg-primary), var(--purple-secondary));
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid var(--purple-secondary);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.projetos-container {
+    margin-top: 40px;
+}
+
+.projetos {
+    background: linear-gradient(145deg, 145deg, #1a0f3d, #5b3dbd);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+
+}
+
+.projetos h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.projetos p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.projetos a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 14px;
+    background-color: transparent;
+    border: 1px solid var(--purple-light);
+    border-radius: 6px;
+    color: var(--purple-light);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.projetos:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.projetos a:hover {
+    transform: translateY(-2px);
+    background-color: var(--purple-light);
+    color: var(--bg-primary);
+}
+
+.projetos::before {
+    content: "Projeto";
+    font-size: 0.7rem;
+    color: var(--purple-light);
+}
+
+
+.section-contato{                               /*CONTATO*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.section-contato a{
+    background-color: var(--purple-primary);             
+    color: var(--text-primary);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid var(--purple-secondary);
+    transition: 0.3s ease;
+}
+.section-contato a:hover{
+    background-color: var(--purple-secondary);
+    border-color: var(--purple-light);
+}
+
+
+.btn-principal{                                /*BOTÃO PRINCIPAL*/
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: var(--purple-light);
+    color: var(--bg-primary);
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-principal:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+
+
+@media (max-width: 768px) {              /*RESPONSIVO*/
+    .section-hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-imagem img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.btn-principal{                                /*BOTÃO PRINCIPAL*/
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: var(--purple-light);
+    color: var(--bg-primary);
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-principal:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.section-skills{                                    /*SEÇÃO HABILIDADES*/
+    padding: 60px 10%;
+}
+
+.section-skills h2{
+    color: var(--purple-light);
+    margin-bottom: 20px;
+}
+
+
+.skills{                             
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skills span{
+    background-color: var(--purple-secondary);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {              /*RESPONSIVO*/
+    .section-hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-imagem img {
+        width: 200px;
+        height: 200px;
+    }
 }
