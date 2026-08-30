@@ -1,10 +1,16 @@
 :root {
-    --bg-primary: #0d0627; 
-    --purple-primary: #623fb3;
-    --purple-secondary: #8b5cf6;
-    --purple-light: #a78bfa;
-    --text-primary: #f1f1f1;
+    --bg-primary: #060607; 
+    --accent-primary: #8B1E3F;
+    --accent-secondary: #A33951;
+    --accent-light: #D98A9F;
+    --text-primary: #030303;
     --text-secondary: #cbd5e1;
+}
+
+[data-theme="light"] {
+  --bg-primary: #FAF6F5;
+  --text-primary: #241418;
+  --text-secondary: #6b5c60;
 }
 
 
@@ -16,10 +22,10 @@ body{
 
 a{
     text-decoration: none;
-    color: var(--purple-primary);
+    color: var(--accent-primary);
     transition: 0.3s ease;
 }
 
 a:hover{
-    color: var(--purple-light);
+    color: var(--accent-secondary);
 }
