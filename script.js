@@ -16,3 +16,17 @@ document.getElementById('theme-toggle').addEventListener('click', function() {
     localStorage.setItem('tema', 'light')
   }
 });
+
+
+const texto = "Desenvolvedora Front-End";
+const elemento = document.getElementById("profissao");
+elemento.textContent = "";
+let i = 0;
+
+const intervalo = setInterval(function() {
+  elemento.textContent += texto[i];
+  i++;
+  if (i >= texto.length) {
+    clearInterval(intervalo);
+  }
+}, 100);
