@@ -1,14 +1,14 @@
 :root {
     --bg-primary: #060607; 
-    --accent-primary: #8B1E3F;
+    --accent-primary: #70263d;
     --accent-secondary: #A33951;
-    --accent-light: #D98A9F;
+    --accent-light: #8B1E3F;
     --text-primary: #030303;
     --text-secondary: #cbd5e1;
 }
 
 [data-theme="light"] {
-  --bg-primary: #FAF6F5;
+  --bg-primary: #f4f1ed;
   --text-primary: #241418;
   --text-secondary: #6b5c60;
 }
